@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -25,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
     String[] country = {"Bangladesh","Pakistan","Nepal","Japan"};
     String[] capital = {"Dhaka","Islamabad","Kathmundu","Tokyo"};
     int[] flags = {R.drawable.bangladesh,R.drawable.bangladesh,R.drawable.bangladesh,R.drawable.bangladesh};
-    ListView lstCountryList;
+//    ListView lstCountryList;
 //    ArrayList<String> countries = new ArrayList<>();
+
+    GridView lstCountryList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 ImageView img;
                 txtCountry.setText(country[position]);
                 txtCapital.setText(capital[position]);
-                img.setImageDrawable(flags[position]);
+//                img.setImageDrawable(flags[position]);
 
                 txtCountry.setOnClickListener(new View.OnClickListener() {
                     @Override
