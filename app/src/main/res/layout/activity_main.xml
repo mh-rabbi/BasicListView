@@ -3,18 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    <ListView-->
+    <ListView
+        android:id="@+id/lst_country"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"/>
+
+    <ListView
+        android:id="@+id/lst_countrys"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+<!--    <GridView-->
 <!--        android:id="@+id/lst_country"-->
+<!--        android:numColumns="3"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"/>-->
-
-    <GridView
-        android:id="@+id/lst_country"
-        android:numColumns="3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 </LinearLayout>
